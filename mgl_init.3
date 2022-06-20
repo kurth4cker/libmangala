@@ -1,0 +1,32 @@
+.Dd 2022-06-20
+.Dt MGL_INIT 3 PRM
+.Os GNU/Linux
+.Sh NAME
+.Nm mgl_init
+.Nd initialize mgl_game
+.Sh SYNOPSIS
+.In mangala.h
+.Ft void
+.Fn mgl_init "struct mgl_game *game"
+.Sh DESCRIPTION
+The
+.Nm
+function initializes the given
+.Va game .
+It fills the
+.Va game->board
+array with 4 except last entries in users inventory. It also sets
+.Va game->user
+and
+.Va game->enemy
+to the right locations.
+
+They are
+.Va &game->board[0]
+and
+.Va &game->board[7]
+by default.
+.Sh SEE ALSO
+.Xr libmangala 7 ,
+.Sh AUTHORS
+.An kurth4cker Aq Mt kurth4cker@tutanota.com
