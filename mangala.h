@@ -8,5 +8,5 @@ struct mgl_game {
 	uint8_t *enemy;
 };
 
-void mgl_init (struct mgl_game *game);
+void mgl_game_init (struct mgl_game *);
 #endif /* MANGALA_H */
