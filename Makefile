@@ -1,6 +1,6 @@
 .POSIX:
 RANLIB ?= ranlib
-OBJ = game.o
+OBJ = game.o turn.o
 
 all: libmangala.a
 $(OBJ): mangala.h

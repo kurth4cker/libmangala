@@ -12,21 +12,11 @@
 The
 .Nm
 function initializes the given
-.Va game .
-It fills the
+.Va game
+structure. It fills the
 .Va game->board
-array with 4 except last entries in users inventory. It also sets
-.Va game->user
-and
-.Va game->enemy
-to the right locations.
-
-They are
-.Va &game->board[0]
-and
-.Va &game->board[7]
-by default.
+array with 4 except last entries in users inventory.
 .Sh SEE ALSO
-.Xr libmangala 7 ,
+.Xr mgl_turn_start 3 ,
 .Sh AUTHORS
 .An kurth4cker Aq Mt kurth4cker@tutanota.com

@@ -1,0 +1,21 @@
+.Dd 2022-06-22
+.Dt MGL_TURN_START 3 PRM
+.Os GNU/Linux
+.Sh NAME
+.Nm mgl_turn_start
+.Nd start mangala turn
+.Sh SYNOPSIS
+.In mangala.h
+.Ft void
+.Fn mgl_turn_start "struct mgl_game *game"
+.Sh DESCRIPTION
+The
+.Nm function prepares the game structure for new turn. It sets the
+.Va game->nrock
+and
+.Va *game->iter
+to true values.
+.Sh SEE ALSO
+.Xr mgl_game_init 3 ,
+.Sh AUTHORS
+.An kurth4cker Aq Mt kurth4cker@tutanota.com
